@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "tower",
+    "name": "Вышки",
     "slug": "tower",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,21 +10,30 @@
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#16A1E1"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tower.app"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#16A1E1"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "package": "com.tower.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "2562d550-5fd6-4bf4-9020-914a4842a067"
+      }
     }
   }
 }
